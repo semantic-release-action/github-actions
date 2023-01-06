@@ -51,7 +51,7 @@ runs:
 
     - run: |
         : invoke semantic-release
-        ./node_modules/.bin/semantic-release --repository-url ${url/git/https} --debug
+        ./node_modules/.bin/semantic-release --repository-url ${url/git/https}
       env:
         GITHUB_TOKEN: ${{ github.token }}
         url: ${{ github.repositoryUrl }}
