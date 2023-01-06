@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.1...v3.0.2) (2023-01-06)
+
+
+### Bug Fixes
+
+* only override package.json if using the actions semrel config ([f92a7ae](https://github.com/EricCrosson/semantic-release-your-github-action/commit/f92a7ae68bb88f5445cb9b2b0bd9f814413071d1))
+
 ## [3.0.1](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.0...v3.0.1) (2023-01-06)
 
 
