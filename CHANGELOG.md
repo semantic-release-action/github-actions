@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.2...v3.0.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* add debug information while debugging semantic-release performance ([3bdd2a6](https://github.com/EricCrosson/semantic-release-your-github-action/commit/3bdd2a6ca41a6c850f2fc5b5d3fd22faa100d434))
+
 ## [3.0.2](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.1...v3.0.2) (2023-01-06)
 
 
