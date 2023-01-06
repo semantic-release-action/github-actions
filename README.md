@@ -32,7 +32,14 @@ name: Release
 
 on:
   push:
-    branches: [master, alpha, beta]
+    branches:
+      - master
+      - next
+      - next-major
+      - beta
+      - alpha
+      - "[0-9]+.[0-9]+.x"
+      - "[0-9]+.x"
 
 # Only allow one release workflow to execute at a time, since each release
 # workflow uses shared resources (git tags)
@@ -45,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: EricCrosson/semantic-release-your-github-action@v1
+      - uses: EricCrosson/semantic-release-your-github-action@v2
 ```
 
 ## Inputs
@@ -62,7 +69,7 @@ Example:
 
 ```yaml
 steps:
-  - uses: EricCrosson/semantic-release-your-github-action@v1
+  - uses: EricCrosson/semantic-release-your-github-action@v2
     with:
       config: .releaserc.json
 ```
