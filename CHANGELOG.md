@@ -1,3 +1,14 @@
+# [2.0.0](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.3...v2.0.0) (2023-01-06)
+
+
+* fix!: rename input to config ([e56f297](https://github.com/EricCrosson/semantic-release-your-github-action/commit/e56f297d84327465d3b5652329f1c772e5b593b1))
+
+
+### BREAKING CHANGES
+
+* rename `semantic-release-configuration` to `config`
+for brevity.
+
 ## [1.0.3](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.2...v1.0.3) (2023-01-06)
 
 
