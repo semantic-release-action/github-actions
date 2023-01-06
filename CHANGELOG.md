@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.4...v3.0.5) (2023-01-06)
+
+
+### Bug Fixes
+
+* remove debug argument to semantic release ([aa0bfd2](https://github.com/EricCrosson/semantic-release-your-github-action/commit/aa0bfd28861b54e2a04d0d2d5f552438eee5eb14))
+
 ## [3.0.4](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.3...v3.0.4) (2023-01-06)
 
 
