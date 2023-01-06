@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.2...v1.0.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* specify repository url explicitly ([a200c6e](https://github.com/EricCrosson/semantic-release-your-github-action/commit/a200c6eaebee0a2c8e8971c0f8454062efb40ab3))
+
 ## [1.0.2](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.1...v1.0.2) (2023-01-06)
 
 
