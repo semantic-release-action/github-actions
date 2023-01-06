@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.0...v3.0.1) (2023-01-06)
+
+
+### Bug Fixes
+
+* use version number that exists ([ee42089](https://github.com/EricCrosson/semantic-release-your-github-action/commit/ee420890e533df075ad6a68f228550f7b0cfb7e1))
+
 # [3.0.0](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v2.0.0...v3.0.0) (2023-01-06)
 
 
