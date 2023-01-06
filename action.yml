@@ -7,7 +7,7 @@ branding:
   color: orange
 
 inputs:
-  semantic-release-configuration:
+  config:
     description: Path to your repository's semantic-release configuration. If specified, use the GitHub API to downlaod this file.
     required: false
 
@@ -65,7 +65,7 @@ runs:
           | tee .releaserc.json
         fi
       env:
-        config: ${{ inputs.semantic-release-configuration }}
+        config: ${{ inputs.config }}
       shell: bash
 
     - run: |
