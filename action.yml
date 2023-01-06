@@ -70,7 +70,7 @@ runs:
 
     - run: |
         : invoke semantic-release
-        ./node_modules/.bin/semantic-release
+        ./node_modules/.bin/semantic-release --repository-url ${{ github.repositoryUrl }}
       env:
         GITHUB_TOKEN: ${{ github.token }}
       shell: bash
