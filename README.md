@@ -55,21 +55,9 @@ jobs:
       - uses: EricCrosson/semantic-release-your-github-action@v2
 ```
 
+If your repository does not specify a semantic-release configuration, this action will provide its own.
+If your repository does specify a semantic-release configuration, that configuration will be used.
+
 ## Inputs
 
-| Input Parameter | Required | Description                                                                                                                                                              |
-| :-------------: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|     config      |  false   | Path to a semantic-release configuration file maintained in your repository. This action will download and use your semantic-release configuration. [[Details](#config)] |
-
-#### config
-
-Specify a path to a semantic-release configuration file maintained in your repository. This action will download and use your semantic-release configuration.
-
-Example:
-
-```yaml
-steps:
-  - uses: EricCrosson/semantic-release-your-github-action@v2
-    with:
-      config: .releaserc.json
-```
+There are no inputs to this action.

@@ -6,11 +6,6 @@ branding:
   icon: package
   color: orange
 
-inputs:
-  config:
-    description: Path to your repository's semantic-release configuration. If specified, use the GitHub API to downlaod this file.
-    required: false
-
 runs:
   using: composite
   steps:
@@ -46,26 +41,16 @@ runs:
         npm ci --ignore-scripts --loglevel error
       shell: bash
 
+    - name: Install semantic-release-cargo
+      uses: taiki-e/install-action@v2
+      with:
+        tool: is-semantic-release-configured@2
+
     - run: |
         : configure semantic-release
-        if [[ -z "${config}" ]]; then
-          rm -f .releaserc.json
+        if ! is-semantic-release-configured; then
           cp ${{ github.action_path }}/.releaserc.json .releaserc.json
-        else
-          rm -f ${config}
-          curl \
-            --fail \
-            --silent \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ github.token }}"\
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/${{ github.repository }}/contents/${config} \
-          | jq --raw-output .content \
-          | base64 -d \
-          | tee .releaserc.json
         fi
-      env:
-        config: ${{ inputs.config }}
       shell: bash
 
     - run: |
