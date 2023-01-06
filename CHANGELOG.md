@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v2.0.0...v3.0.0) (2023-01-06)
+
+
+* feat!: auto detect and use the repository's semantic-release config ([e69137b](https://github.com/EricCrosson/semantic-release-your-github-action/commit/e69137bd468d68f59f015bc3e3ba44899d073904))
+
+
+### BREAKING CHANGES
+
+* the `config` input is no longer supported
+
 # [2.0.0](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.3...v2.0.0) (2023-01-06)
 
 
