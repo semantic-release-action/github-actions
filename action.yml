@@ -44,7 +44,7 @@ runs:
     - name: Install semantic-release-cargo
       uses: taiki-e/install-action@v2
       with:
-        tool: is-semantic-release-configured@2
+        tool: is-semantic-release-configured@1
 
     - run: |
         : configure semantic-release
