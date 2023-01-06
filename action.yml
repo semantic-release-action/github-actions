@@ -51,9 +51,10 @@ runs:
 
     - run: |
         : invoke semantic-release
-        ./node_modules/.bin/semantic-release --repository-url ${{ github.repositoryUrl }} --debug
+        ./node_modules/.bin/semantic-release --repository-url ${url/git/https} --debug
       env:
         GITHUB_TOKEN: ${{ github.token }}
+        url: ${{ github.repositoryUrl }}
       shell: bash
 
       # DISCUSS: do we want to restore the original configuration file and
