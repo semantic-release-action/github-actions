@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.0...v1.0.1) (2023-01-06)
+
+
+### Bug Fixes
+
+* use correct path ([625f3c5](https://github.com/EricCrosson/semantic-release-your-github-action/commit/625f3c5daedaa1a33cd7fed2bd8276de979302e0))
+
 # 1.0.0 (2023-01-06)
 
 
