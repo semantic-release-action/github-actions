@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.1...v1.0.2) (2023-01-06)
+
+
+### Bug Fixes
+
+* access content of downloaded file correctly ([e453fab](https://github.com/EricCrosson/semantic-release-your-github-action/commit/e453fab0caad9e3fd668358b1118574515568ea7))
+
 ## [1.0.1](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v1.0.0...v1.0.1) (2023-01-06)
 
 
