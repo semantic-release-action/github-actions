@@ -1,0 +1,82 @@
+---
+name: semantic-release your GitHub Action
+description: GitHub Action to semantically release your GitHub Action
+author: EricCrosson
+branding:
+  icon: package
+  color: orange
+
+inputs:
+  semantic-release-configuration:
+    description: Path to your repository's semantic-release configuration. If specified, use the GitHub API to downlaod this file.
+    required: false
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        # Fetch all history and tags for calculating next semantic version
+        fetch-depth: 0
+
+    - name: Configure Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+        cache: npm
+
+    - run: |
+        : import next-release-version Node.js package manifests
+        rm -f package.json package-lock.json
+        cp ${{ github.action_path }}/plugin-data/package.json package.json
+        cp ${{ github.action_path }}/plugin-data/package-lock.json package-lock.json
+      shell: bash
+
+    - name: Cache npm dependencies
+      uses: actions/cache@v3
+      id: cache-node-modules
+      with:
+        path: node_modules
+        key: semantic-release-your-github-action-${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+
+    - if: steps.cache-node-modules.outputs.cache-hit != 'true'
+      run: |
+        : install semantic-release
+        npm ci --ignore-scripts --loglevel error
+      shell: bash
+
+    - run: |
+        : configure semantic-release
+        if [[ -z "${config}" ]]; then
+          rm -f .releaserc.json
+          cp ${{ github.action_path }}/.releaserc.json .releaserc.json
+        else
+          rm -f ${config}
+          curl \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ github.token }}"\
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/${{ github.repository }}/contents/${config} \
+          | jq --raw-output .contents \
+          | base64 -d \
+          | tee .releaserc.json
+        fi
+      env:
+        config: ${{ inputs.semantic-release-configuration }}
+      shell: bash
+
+    - run: |
+        : invoke semantic-release
+        ./node_modules/.bin/semantic-release
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      shell: bash
+
+      # DISCUSS: do we want to restore the original configuration file and
+      # package manifests?
+      #
+      # We'll omit for now, relying on the assumption that we're the only
+      # thing running in the calling workflow.
+      #
+      # If you have a different use case, please open an issue or submit a PR!
