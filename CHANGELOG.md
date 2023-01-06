@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.3...v3.0.4) (2023-01-06)
+
+
+### Bug Fixes
+
+* fall back to https repository URL ([41cc4ec](https://github.com/EricCrosson/semantic-release-your-github-action/commit/41cc4ecc0f0641c5db97c667984870a80740cf3d)), closes [#2](https://github.com/EricCrosson/semantic-release-your-github-action/issues/2)
+
 ## [3.0.3](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.2...v3.0.3) (2023-01-06)
 
 
