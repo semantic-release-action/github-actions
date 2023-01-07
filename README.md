@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: EricCrosson/semantic-release-your-github-action@v2
+      - uses: EricCrosson/semantic-release-your-github-action@v3
 ```
 
 If your repository does not specify a semantic-release configuration, this action will provide its own.
