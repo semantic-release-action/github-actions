@@ -1,3 +1,10 @@
+## [3.0.7](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.6...v3.0.7) (2023-01-07)
+
+
+### Bug Fixes
+
+* restrict git assets to changelog ([7992cf7](https://github.com/EricCrosson/semantic-release-your-github-action/commit/7992cf74f0d91e360b46c4e0f746754b8bad0cdb))
+
 ## [3.0.6](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.5...v3.0.6) (2023-01-07)
 
 
