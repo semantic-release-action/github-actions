@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.5...v3.0.6) (2023-01-07)
+
+
+### Bug Fixes
+
+* correct copy/pasta in step name ([b9db974](https://github.com/EricCrosson/semantic-release-your-github-action/commit/b9db9744e084bf3d4fe93535bbaecc6582cc0988))
+
 ## [3.0.5](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.4...v3.0.5) (2023-01-06)
 
 
