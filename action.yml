@@ -15,7 +15,7 @@ runs:
         # Fetch all history and tags for calculating next semantic version
         fetch-depth: 0
 
-    - name: Install semantic-release-cargo
+    - name: Install is-semantic-release-configured
       uses: taiki-e/install-action@v2
       with:
         tool: is-semantic-release-configured@1
