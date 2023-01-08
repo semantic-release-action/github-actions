@@ -1,5 +1,9 @@
 # semantic-release for your GitHub Action
 
+[![Build Status]](https://github.com/EricCrosson/semantic-release-your-github-action/actions/workflows/release.yml)
+
+[build status]: https://github.com/EricCrosson/semantic-release-your-github-action/actions/workflows/release.yml/badge.svg?event=push
+
 **semantic-release-for-your-github-action** is a GitHub Action that releases your GitHub Action with [semantic-release].
 
 [semantic-release]: https://github.com/semantic-release/semantic-release
