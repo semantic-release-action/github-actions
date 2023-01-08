@@ -16,9 +16,9 @@ runs:
         fetch-depth: 0
 
     - name: Install is-semantic-release-configured
-      uses: EricCrosson/install-github-release-binary@v1
+      uses: taiki-e/install-action@v2
       with:
-        repo: EricCrosson/is-semantic-release-configured@v1
+        tool: is-semantic-release-configured@1
 
     - run: |
         : configure semantic-release
