@@ -1,3 +1,10 @@
+## [3.0.9](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.8...v3.0.9) (2023-01-08)
+
+
+### Bug Fixes
+
+* use install-github-release-binary ([f16d31c](https://github.com/EricCrosson/semantic-release-your-github-action/commit/f16d31ceef6fd8a94d0999bd7e8c9e0291d4856f))
+
 ## [3.0.8](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.7...v3.0.8) (2023-01-08)
 
 
