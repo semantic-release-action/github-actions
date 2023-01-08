@@ -3,6 +3,14 @@
 
 ### Bug Fixes
 
+* Revert "fix: use install-github-release-binary" ([1e01856](https://github.com/EricCrosson/semantic-release-your-github-action/commit/1e018560a5270b7c54f0349e31a1d4084857e63e))
+* use install-github-release-binary ([29f992c](https://github.com/EricCrosson/semantic-release-your-github-action/commit/29f992c1064e137dc5bf505736be9c03baa5e7ec))
+
+## [3.0.8](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.7...v3.0.8) (2023-01-08)
+
+
+### Bug Fixes
+
 * use install-github-release-binary ([29f992c](https://github.com/EricCrosson/semantic-release-your-github-action/commit/29f992c1064e137dc5bf505736be9c03baa5e7ec))
 
 ## [3.0.7](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.6...v3.0.7) (2023-01-07)
