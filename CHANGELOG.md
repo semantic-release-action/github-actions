@@ -1,3 +1,10 @@
+## [3.0.10](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.9...v3.0.10) (2023-01-09)
+
+
+### Bug Fixes
+
+* use scratch workspace for temporary files ([162ec7f](https://github.com/EricCrosson/semantic-release-your-github-action/commit/162ec7f6713681ce369546d3481f7cd2801ffdae))
+
 ## [3.0.9](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.8...v3.0.9) (2023-01-08)
 
 
