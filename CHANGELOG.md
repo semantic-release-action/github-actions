@@ -1,3 +1,10 @@
+## [3.0.11](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.10...v3.0.11) (2023-01-10)
+
+
+### Bug Fixes
+
+* cache the correct path ([248e401](https://github.com/EricCrosson/semantic-release-your-github-action/commit/248e401a940b7af720821bbd9b5011a085bacd38))
+
 ## [3.0.10](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.9...v3.0.10) (2023-01-09)
 
 
