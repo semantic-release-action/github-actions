@@ -95,7 +95,7 @@ runs:
       uses: actions/cache@v3
       id: cache-action-node-modules
       with:
-        path: node_modules
+        path: .semantic-release-your-github-action/node_modules
         key: ${{ runner.os }}-node-action-${{ hashFiles('.semantic-release-your-github-action/package-lock.json') }}
 
     - if: steps.is-semantic-release-configured.outputs.host-configuration == 'false' && steps.cache-action-node-modules.outputs.cache-hit != 'true'
