@@ -1,18 +1,6 @@
 {
-  "name": "semantic-release-your-github-action",
-  "version": "0.0.0-semantic-release-managed",
-  "description": "GitHub Action to semantically release your GitHub Action",
+  "name": "@ericcrosson/semantic-release-your-github-action",
   "private": true,
-  "license": "ISC",
-  "author": "Eric Crosson <eric.s.crosson@utexas.edu>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EricCrosson/semantic-release-your-github-action.git"
-  },
-  "bugs": {
-    "url": "https://github.com/EricCrosson/semantic-release-your-github-action/issues"
-  },
-  "homepage": "https://github.com/EricCrosson/semantic-release-your-github-action#readme",
   "devDependencies": {
     "@semantic-release/changelog": "6.0.2",
     "@semantic-release/git": "10.0.1",
