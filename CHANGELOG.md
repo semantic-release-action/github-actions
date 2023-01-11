@@ -1,3 +1,10 @@
+## [3.0.12](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.11...v3.0.12) (2023-01-11)
+
+
+### Bug Fixes
+
+* shrink configuration size ([d187ba1](https://github.com/EricCrosson/semantic-release-your-github-action/commit/d187ba1825f3ebcd99a6c4e45787903c48f10e96))
+
 ## [3.0.11](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.10...v3.0.11) (2023-01-10)
 
 
