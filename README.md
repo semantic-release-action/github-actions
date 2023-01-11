@@ -1,10 +1,10 @@
-# semantic-release for your GitHub Action
+# semantic-release your GitHub Action
 
 [![Build Status]](https://github.com/EricCrosson/semantic-release-your-github-action/actions/workflows/release.yml)
 
 [build status]: https://github.com/EricCrosson/semantic-release-your-github-action/actions/workflows/release.yml/badge.svg?event=push
 
-**semantic-release-for-your-github-action** is a GitHub Action that releases your GitHub Action with [semantic-release].
+**semantic-release-your-github-action** is a GitHub Action that releases your GitHub Action with [semantic-release].
 
 [semantic-release]: https://github.com/semantic-release/semantic-release
 
@@ -64,4 +64,14 @@ If your repository does specify a semantic-release configuration, that configura
 
 ## Inputs
 
-There are no inputs to this action.
+|       Input Parameter       | Required | Description                                                                               |
+| :-------------------------: | :------: | ----------------------------------------------------------------------------------------- |
+| enable-semantic-release-git |   true   | Use [@semantic-release/git] in your release flow. [Details](#enable-semantic-release-git) |
+
+[@semantic-release/git]: https://github.com/semantic-release/git
+
+#### enable-semantic-release-git
+
+Runtime option controlling the use of [@semantic-release/git].
+Set to `false` to prevent semantic-release from pushing artifacts to your repository.
+This may be required with certain repository settings, for example when requiring signed commits.
