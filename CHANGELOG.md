@@ -1,3 +1,11 @@
+# [3.1.0](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.12...v3.1.0) (2023-01-11)
+
+
+### Features
+
+* commit updates to host npm package manifest ([9e8091a](https://github.com/EricCrosson/semantic-release-your-github-action/commit/9e8091a930dab12bd952f4ed91471b57b528994b))
+* expose input to disable @semantic-release/git ([b5f3606](https://github.com/EricCrosson/semantic-release-your-github-action/commit/b5f36067053688abfeb461c7819a98ca33e03a16))
+
 ## [3.0.12](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.11...v3.0.12) (2023-01-11)
 
 
