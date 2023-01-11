@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.1.0...v3.1.1) (2023-01-11)
+
+
+### Bug Fixes
+
+* write the semantic-config changes ([0ad2b39](https://github.com/EricCrosson/semantic-release-your-github-action/commit/0ad2b391194126efb21aeb64cd15421fe036966b))
+
 # [3.1.0](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.0.12...v3.1.0) (2023-01-11)
 
 
