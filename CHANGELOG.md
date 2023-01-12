@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.1.1...v3.1.2) (2023-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update install-github-release-binary to v2 ([0800768](https://github.com/EricCrosson/semantic-release-your-github-action/commit/08007683ba07d4fe71e7685734619cf405777eab))
+
 ## [3.1.1](https://github.com/EricCrosson/semantic-release-your-github-action/compare/v3.1.0...v3.1.1) (2023-01-11)
 
 
