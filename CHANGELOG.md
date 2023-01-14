@@ -1,3 +1,17 @@
+# [4.0.0](https://github.com/semantic-release-action/github-actions/compare/v3.1.2...v4.0.0) (2023-01-14)
+
+
+* feat!: convert to a workflow add concurrency controls ([8b9211b](https://github.com/semantic-release-action/github-actions/commit/8b9211b34ab2c564056e73b9b4860f782ac3ef66))
+
+
+### BREAKING CHANGES
+
+* convert this shared action into a reusable workflow.
+
+This changes the invocation to
+
+```yaml
+
 ## [3.1.2](https://github.com/semantic-release-action/github-actions/compare/v3.1.1...v3.1.2) (2023-01-12)
 
 
