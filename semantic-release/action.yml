@@ -6,6 +6,9 @@ branding:
   icon: package
   color: orange
 
+# Use a composite action for access to github.action_path
+# (which is only supported in composite actions)
+
 inputs:
   enable-semantic-release-git:
     description: Use @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.

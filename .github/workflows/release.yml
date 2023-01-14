@@ -2,15 +2,12 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - master
-      - next
-      - next-major
-      - beta
-      - alpha
-      - "[0-9]+.[0-9]+.x"
-      - "[0-9]+.x"
+  workflow_call:
+    inputs:
+      enable-semantic-release-git:
+        description: Use @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.
+        type: boolean
+        default: true
 
 # Only allow one release workflow to execute at a time, since each release
 # workflow uses shared resources (git tags, package registries)
@@ -23,30 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-          cache: npm
-
-      - name: Cache npm dependencies
-        uses: actions/cache@v3
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-
-      - name: Install npm dependencies
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: npm ci --ignore-scripts
-
       - name: Release
-        run: npx semantic-release --repository-url "${url/git/https}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          url: ${{ github.repositoryUrl }}
+        uses: semantic-release-action/github-actions/semantic-release@v4
+        with:
+          enable-semantic-release-git: ${{ inputs.enable-semantic-release-git }}

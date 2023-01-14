@@ -45,18 +45,9 @@ on:
       - "[0-9]+.[0-9]+.x"
       - "[0-9]+.x"
 
-# Only allow one release workflow to execute at a time, since each release
-# workflow uses shared resources (git tags)
-concurrency:
-  group: ${{ github.workflow }}
-
 jobs:
   release:
-    name: Release
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: semantic-release-action/github-actions@v3
+    uses: semantic-release-action/github-actions/.github/workflows/release@v4
 ```
 
 If your repository does not specify a semantic-release configuration, this action will provide its own.
