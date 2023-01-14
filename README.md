@@ -1,10 +1,10 @@
-# semantic-release your GitHub Action
+# semantic-release-action/github-actions
 
-[![Build Status]](https://github.com/EricCrosson/semantic-release-your-github-action/actions/workflows/release.yml)
+[![Build Status]](https://github.com/semantic-release-action/github-actions/actions/workflows/release.yml)
 
-[build status]: https://github.com/EricCrosson/semantic-release-your-github-action/actions/workflows/release.yml/badge.svg?event=push
+[build status]: https://github.com/semantic-release-action/github-actions/actions/workflows/release.yml/badge.svg?event=push
 
-**semantic-release-your-github-action** is a GitHub Action that releases your GitHub Action with [semantic-release].
+This is a GitHub Action that releases your GitHub Action using [semantic-release].
 
 [semantic-release]: https://github.com/semantic-release/semantic-release
 
@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: EricCrosson/semantic-release-your-github-action@v3
+      - uses: semantic-release-action/github-actions@v3
 ```
 
 If your repository does not specify a semantic-release configuration, this action will provide its own.
