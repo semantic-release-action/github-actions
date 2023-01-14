@@ -1,5 +1,5 @@
 {
-  "name": "@ericcrosson/semantic-release-your-github-action",
+  "name": "@semantic-release-action/github-actions",
   "private": true,
   "devDependencies": {
     "@semantic-release/changelog": "6.0.2",
