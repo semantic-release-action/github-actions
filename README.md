@@ -47,7 +47,7 @@ on:
 
 jobs:
   release:
-    uses: semantic-release-action/github-actions/.github/workflows/release@v4
+    uses: semantic-release-action/github-actions/.github/workflows/release.yml@v4
 ```
 
 If your repository does not specify a semantic-release configuration, this action will provide its own.
