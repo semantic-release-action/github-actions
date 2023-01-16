@@ -1,3 +1,13 @@
+# [5.0.0](https://github.com/semantic-release-action/github-actions/compare/v4.0.0...v5.0.0) (2023-01-16)
+
+
+* fix!: negate logic in runtime semantic-release config ([7db64fc](https://github.com/semantic-release-action/github-actions/commit/7db64fc5d01c704f3b24d00705c5d3a7ba826b91))
+
+
+### BREAKING CHANGES
+
+* negate logic in runtime semantic-release config
+
 # [4.0.0](https://github.com/semantic-release-action/github-actions/compare/v3.1.2...v4.0.0) (2023-01-14)
 
 
