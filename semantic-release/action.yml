@@ -10,10 +10,10 @@ branding:
 # (which is only supported in composite actions)
 
 inputs:
-  enable-semantic-release-git:
-    description: Use @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.
+  disable-semantic-release-git:
+    description: Disable @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.
     type: boolean
-    default: true
+    default: false
 
 runs:
   using: composite
@@ -81,12 +81,12 @@ runs:
       shell: bash
 
     - name: Install is-semantic-release-configured
-      if: steps.is-semantic-release-configured.outputs.host-configuration == 'false' && !inputs.enable-semantic-release-git
+      if: steps.is-semantic-release-configured.outputs.host-configuration == 'false' && inputs.disable-semantic-release-git
       uses: EricCrosson/install-github-release-binary@v2
       with:
         targets: EricCrosson/configure-semantic-release-manifest@v1
 
-    - if: steps.is-semantic-release-configured.outputs.host-configuration == 'false' && !inputs.enable-semantic-release-git
+    - if: steps.is-semantic-release-configured.outputs.host-configuration == 'false' && inputs.disable-semantic-release-git
       run: |
         : disable @semantic-release/git
         configure-semantic-release-manifest --in-place --remove @semantic-release/git

@@ -55,13 +55,13 @@ If your repository does specify a semantic-release configuration, that configura
 
 ## Inputs
 
-|       Input Parameter       | Required | Description                                                                               |
-| :-------------------------: | :------: | ----------------------------------------------------------------------------------------- |
-| enable-semantic-release-git |   true   | Use [@semantic-release/git] in your release flow. [Details](#enable-semantic-release-git) |
+|       Input Parameter        | Default | Description                                                                                    |
+| :--------------------------: | :-----: | ---------------------------------------------------------------------------------------------- |
+| disable-semantic-release-git | `false` | Disable [@semantic-release/git] in your release flow. [Details](#disable-semantic-release-git) |
 
 [@semantic-release/git]: https://github.com/semantic-release/git
 
-#### enable-semantic-release-git
+#### disable-semantic-release-git
 
 Runtime option controlling the use of [@semantic-release/git].
 Set to `false` to prevent semantic-release from pushing artifacts to your repository.

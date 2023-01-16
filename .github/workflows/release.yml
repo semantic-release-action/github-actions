@@ -4,10 +4,10 @@ name: Release
 on:
   workflow_call:
     inputs:
-      enable-semantic-release-git:
-        description: Use @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.
+      disable-semantic-release-git:
+        description: Disable @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.
         type: boolean
-        default: true
+        default: false
 
 # Only allow one release workflow to execute at a time, since each release
 # workflow uses shared resources (git tags, package registries)
@@ -23,4 +23,4 @@ jobs:
       - name: Release
         uses: semantic-release-action/github-actions/semantic-release@v4
         with:
-          enable-semantic-release-git: ${{ inputs.enable-semantic-release-git }}
+          disable-semantic-release-git: ${{ inputs.disable-semantic-release-git }}
