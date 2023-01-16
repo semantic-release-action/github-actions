@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/semantic-release-action/github-actions/compare/v5.0.0...v5.0.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* treat action input as string ([560aff2](https://github.com/semantic-release-action/github-actions/commit/560aff2fb473dccd64897ec9a0f29bbba4660f4f))
+
 # [5.0.0](https://github.com/semantic-release-action/github-actions/compare/v4.0.0...v5.0.0) (2023-01-16)
 
 
