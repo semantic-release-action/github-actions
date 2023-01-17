@@ -21,6 +21,6 @@ jobs:
 
     steps:
       - name: Release
-        uses: semantic-release-action/github-actions/semantic-release@v4
+        uses: semantic-release-action/github-actions/semantic-release@v5
         with:
           disable-semantic-release-git: ${{ inputs.disable-semantic-release-git }}
