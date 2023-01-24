@@ -1,3 +1,10 @@
+## [5.0.2](https://github.com/semantic-release-action/github-actions/compare/v5.0.1...v5.0.2) (2023-01-24)
+
+
+### Bug Fixes
+
+* specify semantic-release as a production dependency ([a246874](https://github.com/semantic-release-action/github-actions/commit/a2468743aa16fa2c34b6a349623fbfce54c30712))
+
 ## [5.0.1](https://github.com/semantic-release-action/github-actions/compare/v5.0.0...v5.0.1) (2023-01-16)
 
 
