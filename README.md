@@ -10,7 +10,7 @@ This is a GitHub Action that releases your GitHub Action using [semantic-release
 
 ## What's in it for me?
 
-This action encapsulates a semantic-release installation and configuration, so your repository only has to focus on the business-logic of your GitHub Action.
+This action encapsulates a semantic-release installation and configuration, so your repository only has to focus on the business logic of your GitHub Action.
 
 The default configuration will:
 
