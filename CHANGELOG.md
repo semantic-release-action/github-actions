@@ -1,3 +1,10 @@
+## [5.0.4](https://github.com/semantic-release-action/github-actions/compare/v5.0.3...v5.0.4) (2023-02-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release-major-tag to v0.2.2 ([613fbad](https://github.com/semantic-release-action/github-actions/commit/613fbada360a22afb2957670398b8e92df0ae6b9))
+
 ## [5.0.3](https://github.com/semantic-release-action/github-actions/compare/v5.0.2...v5.0.3) (2023-02-06)
 
 
