@@ -1,3 +1,10 @@
+## [5.0.12](https://github.com/semantic-release-action/github-actions/compare/v5.0.11...v5.0.12) (2023-09-09)
+
+
+### Performance Improvements
+
+* use jq to modify semantic-release manifest ([13d96a0](https://github.com/semantic-release-action/github-actions/commit/13d96a079347652d2c2093c88f9449931a8e1475))
+
 ## [5.0.11](https://github.com/semantic-release-action/github-actions/compare/v5.0.10...v5.0.11) (2023-07-13)
 
 
