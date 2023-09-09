@@ -1,3 +1,10 @@
+## [5.0.13](https://github.com/semantic-release-action/github-actions/compare/v5.0.12...v5.0.13) (2023-09-09)
+
+
+### Bug Fixes
+
+* corret jq program to filter intended target ([a2b8dac](https://github.com/semantic-release-action/github-actions/commit/a2b8dac24844d91a5f8aae2cf269babbe2aedf1c))
+
 ## [5.0.12](https://github.com/semantic-release-action/github-actions/compare/v5.0.11...v5.0.12) (2023-09-09)
 
 
