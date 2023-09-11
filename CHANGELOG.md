@@ -1,3 +1,10 @@
+## [5.0.14](https://github.com/semantic-release-action/github-actions/compare/v5.0.13...v5.0.14) (2023-09-11)
+
+
+### Bug Fixes
+
+* **jq:** assign data in-place ([8a12a2a](https://github.com/semantic-release-action/github-actions/commit/8a12a2afb9d15804d6b08e686967ea1432231481))
+
 ## [5.0.13](https://github.com/semantic-release-action/github-actions/compare/v5.0.12...v5.0.13) (2023-09-09)
 
 
