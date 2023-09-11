@@ -86,7 +86,7 @@ runs:
       run: |
         : disable @semantic-release/git
         jq \
-          '.plugins | map(select(type == "string" and . == "@semantic-release/git" | not))' \
+          '.plugins |= map(select(type == "string" and . == "@semantic-release/git" | not))' \
           .releaserc.json \
         > "${tmpdir}/.releaserc.json"
 
