@@ -1,3 +1,10 @@
+## [5.0.20](https://github.com/semantic-release-action/github-actions/compare/v5.0.19...v5.0.20) (2024-04-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release to v23.0.8 ([0649198](https://github.com/semantic-release-action/github-actions/commit/06491982c9c6b67eda97fc4b687885029abad44e))
+
 ## [5.0.19](https://github.com/semantic-release-action/github-actions/compare/v5.0.18...v5.0.19) (2024-02-10)
 
 
