@@ -25,7 +25,7 @@ runs:
         fetch-depth: 0
 
     - name: Install is-semantic-release-configured
-      uses: EricCrosson/install-github-release-binary@v2
+      uses: EricCrosson/install-github-release-binary@v2.4.26
       with:
         targets: EricCrosson/is-semantic-release-configured@v1
 
