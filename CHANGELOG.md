@@ -1,3 +1,10 @@
+## [5.0.22](https://github.com/semantic-release-action/github-actions/compare/v5.0.21...v5.0.22) (2024-07-01)
+
+
+### Bug Fixes
+
+* **deps:** pin to known working version of install-github-release-binary ([2538d68](https://github.com/semantic-release-action/github-actions/commit/2538d680768e17747edfb30fed9826b037f33578))
+
 ## [5.0.21](https://github.com/semantic-release-action/github-actions/compare/v5.0.20...v5.0.21) (2024-06-23)
 
 
