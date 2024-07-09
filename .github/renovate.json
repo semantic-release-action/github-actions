@@ -9,7 +9,7 @@
     },
     {
       "matchPackageNames": ["EricCrosson/install-github-release-binary"],
-      "schedule": ["after 4 weeks"],
+      "minimumReleaseAge": ["4 weeks"],
       "enabled": true
     }
   ],
