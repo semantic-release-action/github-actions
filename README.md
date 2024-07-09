@@ -1,8 +1,8 @@
 # semantic-release-action/github-actions
 
-[![Build Status]](https://github.com/semantic-release-action/github-actions/actions/workflows/release.yml)
+[![Build Status]](https://github.com/semantic-release-action/github-actions/actions/workflows/host_release.yml)
 
-[build status]: https://github.com/semantic-release-action/github-actions/actions/workflows/release.yml/badge.svg?event=push
+[build status]: https://github.com/semantic-release-action/github-actions/actions/workflows/host_release.yml/badge.svg?branch=master&event=push
 
 This is a GitHub Action that releases your GitHub Action using [semantic-release].
 
